@@ -1,34 +1,15 @@
 import React from 'react';
 import './App.css';
+import InputButton from "./components/InputButton.js";
 
 function App() {
-  document.body.style.backgroundImage="linear-gradient(to right, #51A8C2, #B6F7DA)";
+  document.body.style.backgroundColor="#FFAF6D"
   return (
-    <div className="Body">
-      <div classname="NavBar">
-        <div className="Header">Chameleon</div>
-      </div>
-
-
-      <div className="LeftColumn">
-        <div classname="profile">
-        
-        </div>
-        <div classname="calendarOptions">
-
-        </div>
-      </div>
-
-
-      <div className="RightColumn">
-        <div classname="calendar">
-          
-        </div>
-      </div>
-      
-      
+    <div>
+      <div className="UserHeader">I am a</div>
+      <InputButton placeholder="Photographer"/>
+      <InputButton placeholder="Client"/>
     </div>
-
   );
 }
 
