@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+
+
+.NavBar{
+  width: 100%; 
+  height: 10%;
+  top: 0%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Header{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 45px;
+  font-weight: 550; 
+  line-height: 1.3em; 
+  text-transform: uppercase; 
+  letter-spacing: 0.5em; 
+  /* position: absolute; */
+  text-align: center;
+  color: #ffffff;
+}
+
+
+.LeftColumn{
+  top: 10%;
+  width: 20%;
+  height: 100%;
+  background-color: red;
+}
+
+.profile{
+  width: 100%; 
+  height: 20%;
+  /* background-color: red; */
+}
+
+.calendarOptions{
+  width: 100%; 
+  height: 80%;
+  /* background-color: blue; */
+}
+
+.RightColumn{
+  top: 10%;
+  width: 80%;
+  height: 100%;
+  background-color: green;
+}
+
+.calendar{
+  width: 100%;  
+  height: 100%;
+  /* background-color: green; */
+}
+
