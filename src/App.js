@@ -1,24 +1,10 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 
 function App() {
+  // document.body.style="background-image: linear-gradient(to right, #4D446F, #Df825F)";
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div>chameleon</div>
   );
 }
 
