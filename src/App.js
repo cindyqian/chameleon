@@ -1,14 +1,14 @@
 import React from 'react';
 import './App.css';
-import InputButton from "./components/InputButton.js";
+import LoginPage from "./pages/Login/Login.js";
+
 
 function App() {
-  document.body.style.backgroundColor="#FFAF6D"
   return (
     <div>
-      <div className="UserHeader">I am a</div>
-      <InputButton placeholder="Photographer"/>
-      <InputButton placeholder="Client"/>
+      <button onClick={LoginPage()}>
+        Login Page
+      </button>
     </div>
   );
 }
