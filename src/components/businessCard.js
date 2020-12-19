@@ -6,11 +6,9 @@ import SearchBar from "./SearchBar.js";
 function BusinessCard(props) {
   return (
     <div className="card">
-      <img src={props.profilePic} alt="Photographer profile" />
+      <img src={props.profilePic} alt="Photographer profile pic" />
       <div className="contactInfo">
-        <p>
-          <strong>{props.name}</strong>
-        </p>
+        <p id="name">{props.name}</p>
         <p>{props.location}</p>
         <p>{props.rate}</p>
         <br />

@@ -35,7 +35,7 @@ const photographers = [
     email: "janedoe@gmail.com",
     website: "https://www.instagram.com/earth/",
     description: "hello i am looking for job opportunities please hire me",
-    tags: ["food", "dogs", "puppies"],
+    tags: ["food", "dogs", "puppies", "sweet greens"],
   },
   {
     profilePic: test,
@@ -73,7 +73,7 @@ const photographers = [
 ];
 
 function MainSearch() {
-  //document.body.style.backgroundColor = "white";
+  document.body.style.backgroundColor = "#6FAEA3";
   return (
     <div className="page">
         <div className="header">
@@ -83,7 +83,7 @@ function MainSearch() {
         <div className="searchResults">
         {
           photographers.map(photographer => {
-              return <BusinessCard
+              return <div className="each"><BusinessCard
                   name={photographer.name}
                   profilePic={photographer.profilePic}
                   location={photographer.location}
@@ -93,7 +93,7 @@ function MainSearch() {
                   website={photographer.website}
                   description={photographer.description}
                   tags={photographer.tags}
-              />
+              /></div>
           })
         }
         </div>

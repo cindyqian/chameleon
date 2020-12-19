@@ -1,27 +1,25 @@
-.MainSearch {
-  background-color: white;
-}
-
 .header {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto; 
+  margin-top: 145px;
+  margin-left: 180px;
 }
 
 .first {
   grid-column: 1;
-  margin: 145px 0px 0px 180px;
 }
 
 .second {
   grid-column: 2;
-  margin: 145px 0px 0px 0px;
 }
-
 
 .searchResults {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  padding: 50px;
+  justify-content: space-around;
   margin: 40px 480px 40px 180px;
+}
+
+.each{
+  padding: 20px 0px 20px 0px;
 }

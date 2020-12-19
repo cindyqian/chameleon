@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+
+.Bar{
+  background-color: "#white";
+  width: "800px";
+  padding: "20px";
+  border-radius: 80px;
+  color: "#016A8F";
+  opacity: "0.7";
+  font-family: "Open Sans", sans-serif;
+  font-size: "80px";
+  border: "none";
+}
+
+::placeholder {
+  color: red;
+}

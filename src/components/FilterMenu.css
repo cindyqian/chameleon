@@ -16,9 +16,11 @@
 }
 
 .dropdown-menu a {
+  background-color: #ffaf6d;
   color: white;
   display: block;
   padding: 20px;
+  min-width: 340px;
 }
 
 .dropdown-menu a:hover {
