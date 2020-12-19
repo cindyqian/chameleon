@@ -10,7 +10,7 @@ const photographers = [
         name: 'Tracy Zhao',
         location: 'CA',
         rate: '$30/hr',
-        phone: '(123)456-7890',
+        phone: '(123) 456-7890',
         email: 'janedoe@gmail.com',
         website: 'https://www.instagram.com/earth/',
         description: 'hello! i am looking for job opportunities please hire me',
@@ -43,7 +43,7 @@ const photographers = [
         name: 'Maggie',
         location: 'CA',
         rate: '$30/hr',
-        phone: '(123)456-7890',
+        phone: '(123) 456-7890',
         email: 'janedoe@gmail.com',
         website: 'https://www.instagram.com/earth/',
         description: 'hello i am looking for job opportunities please hire me',
@@ -63,27 +63,26 @@ const photographers = [
 ]
 
 function MainSearch() {
-    return (
-        <div className="MainSearch">
-            {
-                photographers.map(photographers => {
-                    return <BusinessCard
-                        name={photographers.name}
-                        profilePic={photographers.profilePic}
-                        location={photographers.location}
-                        rate={photographers.rate}
-                        phone={photographers.phone}
-                        email={photographers.email}
-                        website={photographers.website}
-                        description={photographers.description}
-                        tags={photographers.tags}
-                        key={photographers.phone}
-                    />
-                })
-            }
+    document.body.style.backgroundColor="white"
+    return ( 
+        <div className="searchResults">
+        {
+            photographers.map(photographers => {
+                return <BusinessCard
+                    name={photographers.name}
+                    profilePic={photographers.profilePic}
+                    location={photographers.location}
+                    rate={photographers.rate}
+                    phone={photographers.phone}
+                    email={photographers.email}
+                    website={photographers.website}
+                    description={photographers.description}
+                    tags={photographers.tags}
+                />
+            })
+        }
         </div>
     );
 }
-
 
 export default MainSearch;

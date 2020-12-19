@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom';
             <div className="Nav__right">
               <ul className="Nav__item-wrapper">
                 <li className="Nav__item">
-                  <Link className="Nav__link" to="/Users/markqian/Desktop/hacklympics/src/pages/ChooseUser/ChooseUser.js">ChooseUser</Link>
+                  <Link className="Nav__link" id="ChooseUserNav" ref={input => this.inputElement = input} to="/Users/markqian/Desktop/hacklympics/src/pages/ChooseUser/ChooseUser.js">ChooseUser</Link>
                 </li>
                 <li className="Nav__item">
                   <Link className="Nav__link" to="/Users/markqian/Desktop/hacklympics/src/pages/Login/Login.js">Login</Link>
