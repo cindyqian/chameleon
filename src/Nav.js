@@ -13,19 +13,19 @@ import { Link } from 'react-router-dom';
             <div className="Nav__right">
               <ul className="Nav__item-wrapper">
                 <li className="Nav__item">
-                  <Link className="Nav__link" id="ChooseUserNav" ref={input => this.inputElement = input} to="../pages/ChooseUser/ChooseUser.js">ChooseUser</Link>
+                  <Link className="Nav__link" id="ChooseUserNav" ref={input => this.inputElement = input} to="/ChooseUser">ChooseUser</Link>
                 </li>
                 <li className="Nav__item">
-                  <Link className="Nav__link" to="../pages/Login/Login.js">Login</Link>
+                  <Link className="Nav__link" to="/Login">Login</Link>
                 </li>
                 <li className="Nav__item">
-                  <Link className="Nav__link" to="../pages/SignUp/SignUp.js">SignUp</Link>
+                  <Link className="Nav__link" to="/SignUp">SignUp</Link>
                 </li>
                 <li className="Nav__item">
-                  <Link className="Nav__link" to="../pages/MainSearch/MainSearch.js">MainSearch</Link>
+                  <Link className="Nav__link" to="/MainSearch">MainSearch</Link>
                 </li>
                 <li className="Nav__item">
-                  <Link className="Nav__link" to="../pages/EditProfile/EditProfile.js">EditProfile</Link>
+                  <Link className="Nav__link" to="/EditProfile">EditProfile</Link>
                 </li>
               </ul>
             </div>

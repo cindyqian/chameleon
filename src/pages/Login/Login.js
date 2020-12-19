@@ -7,8 +7,8 @@ function Login() {
   document.body.style.backgroundColor = "#FFAF6D";
   return (
     <div>
-      <InputButton placeholder="Username" />
-      <InputButton placeholder="Password" />
+      <InputButton placeholder="Username" left="37" top="35" />
+      <InputButton placeholder="Password" left="37" top="50" />
     </div>
   );
 }

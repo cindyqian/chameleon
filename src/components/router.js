@@ -4,12 +4,15 @@ import { Route, Switch, useLocation, Link } from "react-router-dom";
 import ChooseUser from "../pages/ChooseUser/ChooseUser.js";
 import Login from "../pages/Login/Login.js";
 import SignUp from "../pages/SignUp/SignUp.js";
-import EditProfile from "../pages/EditProfile/EditProfile.js";
+import EditProfile from "../pages/editProfile/EditProfile.js";
 import MainSearch from "../pages/MainSearch/MainSearch.js";
 
 const routes = [
-  { path: "/ChooseUser", name: "ChoseUser", Component: ChooseUser },
+  { path: "/ChooseUser", name: "ChooseUser", Component: ChooseUser },
   { path: "/Login", name: "Login", Component: Login },
+  { path: "/SignUp", name: "SignUp", Component: SignUp },
+  { path: "/MainSearch", name: "MainSearch", Component: MainSearch },
+  { path: "/EditProfile", name: "EditProfile", Component: EditProfile },
 ];
 
 const PageRouter = () => {

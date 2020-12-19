@@ -4,7 +4,13 @@ import './Button.css';
 function InputButton(props) {
   return (
     <form>
-      <input className="button" type="text" value={props.placeholder} />
+      <input className="Button" type="text" 
+      style={{
+        left: props.left + "%" || " 0%",
+        right: props.right + "%" || "0%",
+        top: props.top + "%" || "0%",
+      }}
+      value={props.placeholder} />
     </form>
   );
 }

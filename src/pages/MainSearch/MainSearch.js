@@ -73,33 +73,32 @@ const photographers = [
 ];
 
 function MainSearch() {
-  document.body.style.backgroundColor = "white";
+  //document.body.style.backgroundColor = "white";
   return (
     <div className="page">
         <div className="header">
-            <SearchBar/>
-            <FilterMenu/>
+            <div className="first"><SearchBar/></div>
+            <div className="second"><FilterMenu/></div>
+        </div>
+        <div className="searchResults">
+        {
+          photographers.map(photographer => {
+              return <BusinessCard
+                  name={photographer.name}
+                  profilePic={photographer.profilePic}
+                  location={photographer.location}
+                  rate={photographer.rate}
+                  phone={photographer.phone}
+                  email={photographer.email}
+                  website={photographer.website}
+                  description={photographer.description}
+                  tags={photographer.tags}
+              />
+          })
+        }
         </div>
     </div>
   );
 }
 
 export default MainSearch;
-
-// <div className="searchResults">
-// {
-//     photographers.map(photographer => {
-//         return <BusinessCard
-//             name={photographer.name}
-//             profilePic={photographer.profilePic}
-//             location={photographer.location}
-//             rate={photographer.rate}
-//             phone={photographer.phone}
-//             email={photographer.email}
-//             website={photographer.website}
-//             description={photographer.description}
-//             tags={photographer.tags}
-//         />
-//     })
-// }
-// </div>
