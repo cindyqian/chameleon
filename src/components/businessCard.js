@@ -1,7 +1,7 @@
 import React from 'react';
 import './businessCard.css';
 
-function businessCard(props) {
+function BusinessCard(props) {
     return <div className = "card">
         <img src = {props.profilePic} />
         <div className = 'contactInfo'>
@@ -9,7 +9,7 @@ function businessCard(props) {
             <p>{props.location}</p>
             <p>{props.number}</p>
             <p>{props.email}</p>
-            <p>{props.website}</p>
+            <p><a href={props.website}>Personal Webiste</a></p>
         </div>
         <div className = 'description'>
             <p>hello i am looking for job opportunities please hire me</p>
@@ -21,4 +21,4 @@ function businessCard(props) {
     </div>;
 }
 
-export default businessCard;
+export default BusinessCard;

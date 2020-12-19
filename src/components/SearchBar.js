@@ -1,6 +1,16 @@
 import React from 'react';
 
 const SearchBar = ({keyword, setKeyword}) => {
-    const BarStyling = {width:"800px", backgroundColor:"#FF7E14", padding:"30px"};
-
+    const BarStyling = {backgroundColor:"#FF7E14", width:"800px", padding:"30px", borderRadius:"30px"};
+    return (
+        <input
+            style={BarStyling}
+            key="random1"
+            value={keyword}
+            placeholder={"Search photographers"}
+            onChange={(e) => setKeyword(e.target.value)}
+        />
+    );
 }
+
+export default SearchBar;
