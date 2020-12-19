@@ -1,68 +1,31 @@
 import React from 'react';
-import './App.css';
-
-// import { Route, Switch, useLocation, Link } from 'react-router-dom';
-// import {
-//   BrowserRouter as Router,
-//   Switch,
-//   Route,
-//   Link
-// } from "react-router-dom";
-import LoginPage from "./pages/ChooseUser/ChooseUser.js";
-// import { Switch, Route, RouteComponentProps, Redirect } from 'react-router-dom';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import ChooseUser from "./pages/ChooseUser/ChooseUser.js";
-import Login from "./pages/Login/Login.js";
-import SignUp from "./pages/SignUp/SignUp.js";
-import EditProfile from "./pages/EditProfile/editProfile.js"
-import MainSearch from "./pages/MainSearch/MainSearch.js"
-
-import PageRouter from './components/router.js';
+  // import { Link, Switch, Route } from 'react-router';
+  import { BrowserRouter, Switch, Route } from 'react-router-dom';
+  import Nav from './Nav.js';
+  import ChooseUser from '/Users/markqian/Desktop/hacklympics/src/pages/ChooseUser/ChooseUser.js';
+  import Login from "/Users/markqian/Desktop/hacklympics/src/pages/Login/Login.js";
+  import SignUp from "/Users/markqian/Desktop/hacklympics/src/pages/SignUp/SignUp.js";
+  import MainSearch from "/Users/markqian/Desktop/hacklympics/src/pages/MainSearch/MainSearch.js"
+  import EditProfile from "/Users/markqian/Desktop/hacklympics/src/pages/EditProfile/EditProfile.js"
 
 
-function App() {
-  return (
-
-    <div>
-      
-      {/* <BrowserRouter> */}
-
-           {/* <Route
-             component={Login}
-             exact
-            path="./pages/Login/Login.js"
-          />
-          <Route
-            component={SignUp}
-            exact
-            path="./pages/SignUp/SignUp.js"
-          />
-          <Route
-            component={MainSearch}
-            exact
-            path="./pages/MainSearch/MainSearch.js"
-          />
-          <Route
-            component={EditProfile}
-            exact
-            path="./pages/EditProfile/EditProfile.js"
-          />
-        </Switch> */}
-
-      {/* </BrowserRouter> */}      
-
-
-
-
-
-
-
-    </div>
-
-
-
-  
-  );
-}
-
-export default App; 
+  export default class App extends React.Component {
+    render() {    
+      return (
+        <div className="App">
+          <BrowserRouter>
+            <div>
+              <Nav />
+              <Switch>
+                <Route exactly component={ChooseUser} path="/Users/markqian/Desktop/hacklympics/src/pages/ChooseUser/ChooseUser.js" />
+                <Route exactly component={Login} path="/Users/markqian/Desktop/hacklympics/src/pages/Login/Login.js" />
+                <Route exactly component={SignUp} path="/Users/markqian/Desktop/hacklympics/src/pages/SignUp/SignUp.js" />
+                <Route exactly component={MainSearch} path="/Users/markqian/Desktop/hacklympics/src/pages/MainSearch/MainSearch.js" />
+                <Route exactly component={EditProfile} path="/Users/markqian/Desktop/hacklympics/src/pages/EditProfile/EditProfile.js" />
+              </Switch>
+            </div>
+          </BrowserRouter>
+        </div>
+      );
+    }
+  }

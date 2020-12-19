@@ -4,20 +4,12 @@ import { Route, Switch, useLocation, Link } from 'react-router-dom';
 import ChooseUser from "../pages/ChooseUser/ChooseUser.js";
 import Login from "../pages/Login/Login.js";
 import SignUp from "../pages/SignUp/SignUp.js";
-import EditProfile from "../pages/EditProfile/editProfile.js"
+import EditProfile from "../pages/EditProfile/EditProfile.js"
 import MainSearch from "../pages/MainSearch/MainSearch.js"
 
-// const routes = [
-//     { path: '/', name: 'Landing', Component: Landing },
-//     { path: '/Projects', name: 'Projects', Component: Projects },
-//     { path: '/About', name: 'About', Component: About },
-//     { path: '/Gallery', name: 'Gallery', Component: Gallery },
-//     { path: '/Pricing', name: 'Pricing', Component: Pricing }
-// ]
-
 const routes = [
-    { path: "../pages/ChooseUser", name: "ChoseUser", Component: ChooseUser }, 
-    { path: "../pages/Login", name: "Login", Component: Login } 
+    { path: "/ChooseUser", name: "ChoseUser", Component: ChooseUser }, 
+    { path: "/Login", name: "Login", Component: Login } 
 ]
 
 const PageRouter = () => {

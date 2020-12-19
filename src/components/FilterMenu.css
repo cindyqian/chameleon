@@ -1,0 +1,30 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+    background-color: #FFAF6D;
+    border-radius: 30px;
+    min-width: 340px;
+    padding: 20px;
+    color: white;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #FFAF6D;
+    min-width: 340px;
+}
+
+.dropdown-menu a {
+    color: white;
+    display: block;
+    padding: 20px;
+}
+
+.dropdown-menu a:hover {
+    background-color: rgba(243, 188, 142, 0.377);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
