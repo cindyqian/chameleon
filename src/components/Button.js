@@ -1,6 +1,6 @@
 import React from 'react';
-import '/Users/markqian/Desktop/hacklympics/src/components/Button.css';
-import InputButton from "/Users/markqian/Desktop/hacklympics/src/components/InputButton.js";
+import './Button.css';
+import InputButton from "./InputButton.js";
 // CHANGE TO NEW SHORTENED URL THAT ACTUALLY WORKS IEUHRSKJFIUEKRJSHFIUKHEJRD FIDUKJHERSD
 
 

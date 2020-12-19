@@ -1,8 +1,8 @@
 import React from 'react';
-import '/Users/markqian/Desktop/hacklympics/src/pages/main.css';
-import InputButton from "/Users/markqian/Desktop/hacklympics/src/components/InputButton.js";
+import '../main.css';
+import InputButton from "../../components/InputButton.js";
 // CHANGE TO NEW SHORTENED URL THAT ACTUALLY WORKS IEUHRSKJFIUEKRJSHFIUKHEJRD FIDUKJHERSD
-import Button from '/Users/markqian/Desktop/hacklympics/src/components/Button.js';
+import Button from '../../components/Button.js';
 
 
 function ChooseUser() {

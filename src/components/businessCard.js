@@ -1,7 +1,7 @@
 import React from 'react';
 import './businessCard.css';
-import FilterMenu from '/Users/markqian/Desktop/hacklympics/src/components/FilterMenu.js';
-import SearchBar from '/Users/markqian/Desktop/hacklympics/src/components/SearchBar.js';
+import FilterMenu from './FilterMenu.js';
+import SearchBar from './SearchBar.js';
 
 
 function BusinessCard(props) {

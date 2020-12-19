@@ -1,6 +1,6 @@
-import SearchBar from '/Users/markqian/Desktop/hacklympics/src/components/SearchBar.js';
-import FilterMenu from '/Users/markqian/Desktop/hacklympics/src/components/FilterMenu.js';
-import BusinessCard from '/Users/markqian/Desktop/hacklympics/src/components/businessCard.js';
+import SearchBar from '../../components/SearchBar.js';
+import FilterMenu from '../../components/FilterMenu.js';
+import BusinessCard from '../../components/businessCard.js';
 import "./MainSearch.css";
 import test from './logo.svg';
 

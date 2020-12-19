@@ -1,5 +1,5 @@
 import React from 'react';
-import '/Users/markqian/Desktop/hacklympics/src/pages/main.css';
+import '../main.css';
 
 function SignUp() {
     document.body.style.backgroundColor="#FFAF6D"
