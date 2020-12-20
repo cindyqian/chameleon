@@ -5,16 +5,18 @@
 .quickView {
   width: 800px;
   display: grid;
+  /* grid-template-columns: 15% 20% auto auto auto; */
   grid-template-columns: 15% 20% auto auto auto;
-  grid-template-rows: 20% 20% auto auto auto auto;
+  grid-template-rows: 10% 20% auto auto auto auto;
   background-color: white;
-  border-radius: 30px;
-  padding: 20px;
+  border-radius: 40px;
+  padding: 10px;
   column-gap: 10px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 18px;
-  color: black;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.301);
+  color: #001F4E;
+  /* box-shadow: 2px 4px 4px 1px #fa692a; */
+  /* rgba(0, 0, 0, 0.301); */
   opacity: 0.8;
 }
 
@@ -24,13 +26,15 @@
 }
 
 #name {
-  font-size: 20px;
+  font-family: "Quicksand", sans-serif !important;
+  font-size: 25px !important;
   font-weight: bold;
+
 }
 
 .contactInfo {
   grid-column: 2;
-  grid-row: 1 / span 6;
+  grid-row: 2 / span 6;
 }
 
 .description {

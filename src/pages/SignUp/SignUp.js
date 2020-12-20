@@ -8,6 +8,8 @@ import InputButton from "../../components/InputButton.js";
 import Button from "../../components/Button.js";
 import Submit from '../../components/Submit.js';
 
+import { generateUserDocument } from "../../firebase.js";
+
 export default function SignUp() {
   document.body.style.backgroundColor = "#FFAF6D";
 
@@ -22,13 +24,16 @@ export default function SignUp() {
     e.preventDefault();
 
     if (passwordRef.current.value !== confirmPasswordRef.current.value) {
+      console.log("Do not match")
       return setError("Passwords do not match!");
     }
 
     try {
       setError("");
       setLoading(true);
-      await signup(emailRef.current.value, passwordRef.current.value);
+      console.log("signed up")
+      const {user} = await signup(emailRef.current.value, passwordRef.current.value);
+      generateUserDocument(user, {phone: "phone", rate: "rate", website: "website"});
     } catch {
       setError("Failed to create an account");
     }
@@ -38,7 +43,6 @@ export default function SignUp() {
   return (
     <AuthProvider>
       <div className="UserHeader SignUpHeader">Sign Up</div>
-      {error && <Alert variant="danger">{error}</Alert>}
       <Container className="d-flex justify-content-center">
         <div className="w-100" style={{ maxWidth: "400px" }}>
           {/* <Card style={{ maxWidth: "400px" , color: "#fa692a", borderRadius: "30px"}}> */}

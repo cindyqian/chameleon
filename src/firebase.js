@@ -1,5 +1,6 @@
-import firebase from 'firebase/app'
-import "firebase/auth"
+import firebase from 'firebase/app';
+import "firebase/auth";
+import 'firebase/firestore';
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
@@ -15,12 +16,37 @@ const firebaseConfig = {
 const app = firebase.initializeApp(firebaseConfig);
 
 export const auth = app.auth();
-
-//u export db and then use this db object in other files should i keep going then
-// what have u guys done so far? 
-
-//https://firebase.google.com/docs/auth/web/manage-users
-
-//export const db = app.firestore(); 
-
+export const db = app.firestore(); 
 export default app;
+
+
+export const generateUserDocument = async (user, additionalData) => {
+  if (!user) return;
+  const userRef = db.doc(`users/${user.uid}`);
+  const snapshot = await userRef.get();
+  if (!snapshot.exists) {
+    const { email } = user;
+    try {
+      console.log(additionalData)
+      await userRef.set({
+        email,
+        ...additionalData
+      });
+    } catch (error) {
+      console.error("Error creating user document", error);
+    }
+  }
+  return getUserDocument(user.uid);
+};
+const getUserDocument = async uid => {
+  if (!uid) return null;
+  try {
+    const userDocument = await db.doc(`users/${uid}`).get();
+    return {
+      uid,
+      ...userDocument.data()
+    };
+  } catch (error) {
+    console.error("Error fetching user", error);
+  }
+};

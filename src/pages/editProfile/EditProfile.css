@@ -1,42 +1,54 @@
-.container {
-    display: grid;
-    grid-template-columns: 20% auto auto;
-    grid-template-rows: 9% 9% 9% 9% 35% auto;
-    gap: 20px 20px;
+.page {
+    display: flex;
+    justify-content: center;
 }
 
-#name {
-    grid-column: 2 3;
+.editProfileContainer {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 30% 35% 35%;
+    grid-template-rows: 9% 9% 9% 9% 35% auto;
+    gap: 50px 20px;
+    margin: 25px 150px 150px 150px;
+}
+
+/* #profilePic {
+    grid-column: 1 / span 1;
+    border-radius: 50%;
+    background-color: white;
+} */
+
+#editName {
+    grid-column: 2 / span 2;
     grid-row: 1;
 }
 
 #email {
-    grid-column: 2 3;
+    grid-column: 2 / span 2;
     grid-row: 2;
 }
 
 #phoneNum {
-    grid-column: 2 2;
+    grid-column: 2 / span 1;
     grid-row: 3;
 }
 
 #location {
-    grid-column: 3;
+    grid-column: 3 / span 1;
     grid-row: 3;
 }
 
 #website {
-    grid-column: 2 3;
+    grid-column: 1 / span 3;
     grid-row: 4;
 }
 
 #introduction {
-    grid-column: 1 / span;
+    grid-column: 1 / span 3;
     grid-row: 5;
-    width: 100%;
 }
 
-
 .tag-container {
-    
+    grid-column: 1 / span 3;
+    grid-row: 6;
 }

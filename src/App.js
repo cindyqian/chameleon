@@ -6,19 +6,17 @@ import PageRouter from "./components/router.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { AuthProvider } from "./contexts/AuthContexts.js";
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <AuthProvider>
-        <div className="App">
-          <BrowserRouter>
-            <div>
-              <Navigation />
-              <PageRouter />
-            </div>
-          </BrowserRouter>
-        </div>
-      </AuthProvider>
-    );
-  }
+export default function App() {
+  return (
+    <AuthProvider>
+      <div className="App">
+        <BrowserRouter>
+          <div>
+            <Navigation />
+            <PageRouter />
+          </div>
+        </BrowserRouter>
+      </div>
+    </AuthProvider>
+  );
 }
