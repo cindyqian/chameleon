@@ -1,7 +1,6 @@
 import React from "react";
 import "../main.css";
-import InputButton from "../../components/InputButton.js";
-// CHANGE TO NEW SHORTENED URL THAT ACTUALLY WORKS IEUHRSKJFIUEKRJSHFIUKHEJRD FIDUKJHERSD
+
 import Button from "../../components/Button.js";
 
 function ChooseUser() {
@@ -10,8 +9,8 @@ function ChooseUser() {
     <div>
       <div className="UserHeader">I am a...</div>
       <div className="CenterItems">
-        <Button text="Photographer" left="22" top="50" path="/login" />
-        <Button text="Client" right="22" top="50" path="/search" />
+        <Button buttonType="Button" text="Photographer" left="22" top="50" path="/login" />
+        <Button buttonType="Button" text="Client" right="22" top="50" path="/search" />
       </div>
     </div>
   );

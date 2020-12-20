@@ -16,6 +16,7 @@
   font-size: 18px;
   color: black;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.301);
+  opacity: 0.8;
 }
 
 .card > img {

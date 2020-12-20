@@ -1,47 +1,21 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
+import {Nav, Navbar } from 'react-bootstrap';
+import Logo from "./components/Logo.js";
 
-export default class Nav extends React.Component {
+export default class Navigation extends React.Component {
   render() {
     return (
-      <nav className="Nav">
-        <div className="Nav__container">
-          <div className="Nav__right">
-            <ul className="Nav__item-wrapper">
-              <li className="Nav__item">
-                <Link
-                  className="Nav__link"
-                  id="ChooseUserNav"
-                  ref={(input) => (this.inputElement = input)}
-                  to="/"
-                >
-                  ChooseUser
-                </Link>
-              </li>
-              <li className="Nav__item">
-                <Link className="Nav__link" to="/login">
-                  Login
-                </Link>
-              </li>
-              <li className="Nav__item">
-                <Link className="Nav__link" to="/signup">
-                  SignUp
-                </Link>
-              </li>
-              <li className="Nav__item">
-                <Link className="Nav__link" to="/search">
-                  MainSearch
-                </Link>
-              </li>
-              <li className="Nav__item">
-                <Link className="Nav__link" to="/profile">
-                  EditProfile
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+      <Navbar style={{backgroundColor: "#FFAF6D"}} expand="lg">
+        <Logo />
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="mr-auto">
+            <Nav.Link className= "mr-sm-2" style={{color: "white", fontSize: "1.5rem", fontWeight: "bold"}} href="/search">Home</Nav.Link>
+            <Nav.Link style={{color: "white", fontSize: "1.5rem", fontWeight: "bold"}} href="/login">Login</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
     );
   }
 }
