@@ -5,9 +5,9 @@ import "./Logo.css";
 function Logo() {
   return (
     <div className="logo">
-      <a className="no-decoration" href="/">
-        <img src={Camera} alt="camera" />
-        &nbsp; Chameleon
+      <a className="container" href="/">
+        <img src={Camera} alt="camera"/>
+        <div className="a > div">Chameleon</div>
       </a>
     </div>
   );

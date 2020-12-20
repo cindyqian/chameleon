@@ -1,0 +1,42 @@
+.container {
+    display: grid;
+    grid-template-columns: 20% auto auto;
+    grid-template-rows: 9% 9% 9% 9% 35% auto;
+    gap: 20px 20px;
+}
+
+#name {
+    grid-column: 2 3;
+    grid-row: 1;
+}
+
+#email {
+    grid-column: 2 3;
+    grid-row: 2;
+}
+
+#phoneNum {
+    grid-column: 2 2;
+    grid-row: 3;
+}
+
+#location {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+#website {
+    grid-column: 2 3;
+    grid-row: 4;
+}
+
+#introduction {
+    grid-column: 1 / span;
+    grid-row: 5;
+    width: 100%;
+}
+
+
+.tag-container {
+    
+}

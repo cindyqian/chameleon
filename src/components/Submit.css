@@ -1,0 +1,7 @@
+.submit{
+    opacity: 0.7;
+}
+
+.submit:hover{
+    opacity: 1;
+}

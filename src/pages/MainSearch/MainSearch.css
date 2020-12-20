@@ -1,8 +1,9 @@
 .header {
   display: grid;
-  grid-template-columns: auto auto; 
+  grid-template-columns: 800px auto; 
   margin-top: 25px;
   margin-left: 150px;
+  grid-column-gap: 20px;
 }
 
 .first {

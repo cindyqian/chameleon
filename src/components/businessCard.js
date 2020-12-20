@@ -1,7 +1,5 @@
 import React from "react";
 import "./businessCard.css";
-import FilterMenu from "./FilterMenu.js";
-import SearchBar from "./SearchBar.js";
 
 function BusinessCard(props) {
   return (

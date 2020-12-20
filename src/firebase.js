@@ -14,5 +14,13 @@ const firebaseConfig = {
 
 const app = firebase.initializeApp(firebaseConfig);
 
-export const auth = app.auth()
+export const auth = app.auth();
+
+//u export db and then use this db object in other files should i keep going then
+// what have u guys done so far? 
+
+//https://firebase.google.com/docs/auth/web/manage-users
+
+//export const db = app.firestore(); 
+
 export default app;

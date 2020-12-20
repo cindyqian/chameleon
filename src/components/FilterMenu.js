@@ -8,7 +8,7 @@ function FilterMenu() {
       <div className="dropdown-menu">
         <a href="LINK HOLDER">Price low to high</a>
         <a href="LINK HOLDER">Price high to low</a>
-        <a href="LINK HOLDER">Distance by zipcode</a>
+        <a href="LINK HOLDER">Distance by ZIP Code</a>
       </div>
     </div>
   );

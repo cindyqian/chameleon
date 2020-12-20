@@ -1,10 +1,9 @@
-import React from 'react'
+import React from 'react';
+import "./enterInfo.css";
 
-function enterInfo() {
+function EnterInfo(props) {
     return (
-        <form>
-            <input type="text">
-        </form>
+        <input className = "field" placeholder={props.placeholder}/>
     )
 }
 

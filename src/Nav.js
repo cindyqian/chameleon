@@ -10,10 +10,10 @@ export default class Navigation extends React.Component {
         <Logo />
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto">
-            <Nav.Link className= "mr-sm-2" style={{color: "white", fontSize: "1.5rem", fontWeight: "bold"}} href="/search">Home</Nav.Link>
-            <Nav.Link style={{color: "white", fontSize: "1.5rem", fontWeight: "bold"}} href="/login">Login</Nav.Link>
-            <Nav.Link style={{color: "white", fontSize: "1.5rem", fontWeight: "bold"}} href="/profile">Edit Profile</Nav.Link>
+          <Nav className="navContainer mr-auto">
+            <Nav.Link className= "mr-sm-2 navText" style={{color: "white", fontSize: "1.5rem", fontWeight: "bold"}} href="/search">Home</Nav.Link>
+            <Nav.Link className="navText" style={{color: "white", fontSize: "1.5rem", fontWeight: "bold"}} href="/login">Login</Nav.Link>
+            <Nav.Link className="navText" style={{color: "white", fontSize: "1.5rem", fontWeight: "bold"}} href="/profile">Edit Profile</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

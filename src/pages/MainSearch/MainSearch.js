@@ -1,4 +1,4 @@
-import SearchBar from "../../components/SearchBar.js";
+import SearchBar2 from "../../components/SearchBar2.js";
 import FilterMenu from "../../components/FilterMenu.js";
 import BusinessCard from "../../components/businessCard.js";
 import "./MainSearch.css";
@@ -77,7 +77,7 @@ function MainSearch() {
   return (
     <div className="page">
         <div className="header">
-            <div className="first"><SearchBar/></div>
+            <div className="first"><SearchBar2/></div>
             <div className="second"><FilterMenu/></div>
         </div>
         <div className="searchResults">

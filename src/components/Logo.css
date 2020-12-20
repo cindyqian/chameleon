@@ -11,15 +11,19 @@
     color: white;
 }
 
-.no-decoration {
-    color: #FFFFFF;
-    text-decoration: none;
-}
-.no-decoration:hover {
+.container {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
     color: #FFFFFF;
     text-decoration: none;
 }
 
-/* .logo > img {
+a > div {
+    padding: 10px;
+}
 
-} */
+.container:hover{
+    color: #FFFFFF;
+    text-decoration: none;
+}

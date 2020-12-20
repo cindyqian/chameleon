@@ -7,7 +7,11 @@
   min-width: 340px;
   padding: 20px;
   color: #fa692a;
+  font-size: 20px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.301);
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  padding-left: 30px; 
 }
 
 .dropdown-menu {
@@ -16,27 +20,25 @@
   background-color: white;
   opacity: 1;
   min-width: 340px;
-  color: #fa692a;
 }
 
 .dropdown-menu a {
   background-color: white;
   opacity: 1;
-  color: #fa692a;
   display: block;
   padding: 20px;
   min-width: 340px;
+  font-size: 20px;
+  color: #fa692a;
+  padding-left: 30px; 
 }
 
 .dropdown-menu a:hover {
   background-color: rgba(243, 188, 142, 0.377); 
   opacity: 1;
-  color: #000000;
 }
 
 .dropdown:hover .dropdown-menu {
   display: block;
-  color: #fa692a;
   opacity: 1;
-  color: #000000;
 }
