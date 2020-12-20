@@ -5,7 +5,7 @@ import SearchBar from "./SearchBar.js";
 
 function BusinessCard(props) {
   return (
-    <div className="card">
+    <div className="quickView">
       <img src={props.profilePic} alt="Photographer profile pic" />
       <div className="contactInfo">
         <p id="name">{props.name}</p>

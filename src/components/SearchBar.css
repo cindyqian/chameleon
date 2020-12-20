@@ -3,18 +3,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 
 
-.Bar{
-  background-color: "#white";
-  width: "800px";
-  padding: "20px";
-  border-radius: 80px;
-  color: "#016A8F";
-  opacity: "0.7";
-  font-family: "Open Sans", sans-serif;
-  font-size: "80px";
-  border: "none";
+.Bar {
+  background-color: white;
+  width: 100%;
+  padding: 20px;
+  border-radius: 80px;
+  color: white;
+  opacity: 0.7;
+  font-family: "Open Sans", sans-serif;
+  font-size: 80px;
+  border: none;
 }
 
 ::placeholder {
-  color: red;
+  color: red;
 }

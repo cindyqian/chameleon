@@ -2,24 +2,13 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 
-
-.logo {
-    padding: 25px;
-    top: 40%;
-    font-family: "Quicksand", sans-serif;
-    font-size: 64px;
+.footer {
     color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 320px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    letter-spacing: 0.1em;
 }
-
-.no-decoration {
-    color: #FFFFFF;
-    text-decoration: none;
-}
-.no-decoration:hover {
-    color: #FFFFFF;
-    text-decoration: none;
-}
-
-/* .logo > img {
-
-} */

@@ -73,7 +73,7 @@ const photographers = [
 ];
 
 function MainSearch() {
-  document.body.style.backgroundColor = "#6FAEA3";
+  document.body.style.backgroundColor = "#FFAF6D";
   return (
     <div className="page">
         <div className="header">

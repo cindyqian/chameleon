@@ -1,17 +1,20 @@
 import React from "react";
 import './Button.css';
+import { Form, Button, Card, Container, Alert } from "react-bootstrap";
 
 function InputButton(props) {
+
   return (
-    <form>
+    <Form onSubmit={props.handleSubmit}>
       <input className="Button" type="text" 
       style={{
         left: props.left + "%" || " 0%",
         right: props.right + "%" || "0%",
         top: props.top + "%" || "0%",
       }}
-      value={props.placeholder} />
-    </form>
+      placeholder={props.placeholder}/* value={} *//>
+      {/* {error && <Alert variant="danger">{error}</Alert>} */}
+    </Form>
   );
 }
 

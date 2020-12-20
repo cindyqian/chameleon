@@ -8,11 +8,11 @@ import EditProfile from "../pages/editProfile/EditProfile.js";
 import MainSearch from "../pages/MainSearch/MainSearch.js";
 
 const routes = [
-  { path: "/ChooseUser", name: "ChooseUser", Component: ChooseUser },
-  { path: "/Login", name: "Login", Component: Login },
-  { path: "/SignUp", name: "SignUp", Component: SignUp },
-  { path: "/MainSearch", name: "MainSearch", Component: MainSearch },
-  { path: "/EditProfile", name: "EditProfile", Component: EditProfile },
+  { path: "/", name: "", Component: ChooseUser },
+  { path: "/login", name: "login", Component: Login },
+  { path: "/signup", name: "signup", Component: SignUp },
+  { path: "/search", name: "search", Component: MainSearch },
+  { path: "/profile", name: "profile", Component: EditProfile },
 ];
 
 const PageRouter = () => {
@@ -29,61 +29,4 @@ const PageRouter = () => {
 
 export default PageRouter;
 
-// export default function App() {
-//     return (
-//         <Router>
-//             <div>
-//                 <nav>
-//                     <ul>
-//                         <li>
-//                             <Link to="./pages/ChooseUser/ChooserUser.js">ChooseUser</Link>
-//                         </li>
-//                     </ul>
-//                     <ul>
-//                         <li>
-//                             <Link to="./pages/ChooseUser/ChooserUser.js">ChooseUser</Link>
-//                         </li>
-//                     </ul>
-//                     <ul>
-//                         <li>
-//                             <Link to="./pages/ChooseUser/ChooserUser.js">ChooseUser</Link>
-//                         </li>
-//                     </ul>
-//                     <ul>
-//                         <li>
-//                             <Link to="./pages/ChooseUser/ChooserUser.js">ChooseUser</Link>
-//                         </li>
-//                     </ul>
-//                 </nav>
 
-//                 {/* A <Switch> looks through its children <Route>s and
-//             renders the first one that matches the current URL. */}
-//                 {/* <Switch> */}
-//                     {/* <Route path="/about">
-//                         <About />
-//                     </Route>
-//                     <Route path="/users">
-//                         <Users />
-//                     </Route> */}
-//                     {/* <Route path="./pages/ChooseUser/ChooserUser.js">
-//                         <ChooseUser />
-//                     </Route>
-//                 </Switch> */}
-//             </div>
-//         </Router>
-//     );
-// }
-//         // </Router>
-
-//         // ReactDOM.render((
-//         //     <Router history = {browserHistory}>
-//         //        <Route path = "/" component = {App}>
-//         //           <IndexRoute component = {Home} />
-//         //           {/* Choose Photographer or Client, redirects to Login or MainSearch */}
-//         //           <Route path = "ChooseUser" component = {Home} />
-//         //           {/* Login, if new user, redirect to SignUp */}
-//         //           <Route path = "Login" component = {About} />
-//         //           {/* SignUp, redirects MainSearch */}
-//         //           <Route path = "SignUp" component = {Contact} />
-//         //           {/* MainSearch, can redirect to EditProfile */}
-//         //           <Route path = "MainSearch" component = {Contact} />

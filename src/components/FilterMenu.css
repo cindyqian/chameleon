@@ -1,32 +1,42 @@
 .dropdown {
   position: relative;
   display: inline-block;
-  background-color: #ffaf6d;
+  background-color: white;
+  opacity: 0.7;
   border-radius: 30px;
   min-width: 340px;
   padding: 20px;
-  color: white;
+  color: #fa692a;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.301);
 }
 
 .dropdown-menu {
   display: none;
   position: absolute;
-  background-color: #ffaf6d;
+  background-color: white;
+  opacity: 1;
   min-width: 340px;
+  color: #fa692a;
 }
 
 .dropdown-menu a {
-  background-color: #ffaf6d;
-  color: white;
+  background-color: white;
+  opacity: 1;
+  color: #fa692a;
   display: block;
   padding: 20px;
   min-width: 340px;
 }
 
 .dropdown-menu a:hover {
-  background-color: rgba(243, 188, 142, 0.377);
+  background-color: rgba(243, 188, 142, 0.377); 
+  opacity: 1;
+  color: #000000;
 }
 
 .dropdown:hover .dropdown-menu {
   display: block;
+  color: #fa692a;
+  opacity: 1;
+  color: #000000;
 }

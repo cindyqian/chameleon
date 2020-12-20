@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: auto auto; 
   margin-top: 145px;
-  margin-left: 180px;
+  margin-left: 250px;
 }
 
 .first {
@@ -14,10 +14,7 @@
 }
 
 .searchResults {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  margin: 40px 480px 40px 180px;
+  margin: 40px 480px 40px 250px;
 }
 
 .each{

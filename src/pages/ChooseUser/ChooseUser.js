@@ -10,8 +10,8 @@ function ChooseUser() {
     <div>
       <div className="UserHeader">I am a...</div>
       <div className="CenterItems">
-        <Button text="Photographer" left="22" top="50" />
-        <Button text="Client" right="22" top="50" />
+        <Button text="Photographer" left="22" top="50" path="/login" />
+        <Button text="Client" right="22" top="50" path="/search" />
       </div>
     </div>
   );

@@ -3,19 +3,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 
 
-.card {
+.quickView {
   width: 800px;
   display: grid;
   grid-template-columns: 15% 20% auto auto auto;
   grid-template-rows: 20% 20% auto auto auto auto;
-  border: 1px solid black;
   background-color: white;
   border-radius: 30px;
   padding: 20px;
   column-gap: 10px;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
-  color: #012152;
+  color: black;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.301);
 }
 
 .card > img {

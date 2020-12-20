@@ -1,15 +1,16 @@
 import React from "react";
 import Camera from "./camera.svg";
-import "./Logo.css"
+import "./Logo.css";
 
 function Logo() {
-    return (
-        <div className="logo">
-            <img src={Camera} alt="camera"/>
-            Chameleon
-        </div>
-    )
+  return (
+    <div className="logo">
+      <a className="no-decoration" href="/">
+        <img src={Camera} alt="camera" />
+        Chameleon
+      </a>
+    </div>
+  );
 }
-
 
 export default Logo;

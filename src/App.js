@@ -1,6 +1,6 @@
 import React from "react";
 // import { Link, Switch, Route } from 'react-router';
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import Nav from "./Nav.js";
 import PageRouter from "./components/router.js";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -10,9 +10,9 @@ import { AuthProvider } from "./contexts/AuthContexts.js";
 export default class App extends React.Component {
   render() {
     return (
-      <AuthProvider>      
+      <AuthProvider>
         <div className="App">
-          <div><Logo/></div>
+          <Logo />
           <BrowserRouter>
             <div>
               <Nav />
