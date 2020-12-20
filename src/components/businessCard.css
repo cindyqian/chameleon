@@ -4,43 +4,122 @@
 
 .quickView {
   width: 800px;
-  display: grid;
+  height: 350px;
+  /* display: grid; */
   /* grid-template-columns: 15% 20% auto auto auto; */
-  grid-template-columns: 15% 20% auto auto auto;
-  grid-template-rows: 10% 20% auto auto auto auto;
+  /* grid-template-columns: 60% 40%; */
+  /* grid-template-rows: 10% 20% auto auto auto auto; */
+
   background-color: white;
   border-radius: 40px;
   padding: 10px;
   column-gap: 10px;
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
+  letter-spacing: 0.1em;
   color: #001F4E;
   /* box-shadow: 2px 4px 4px 1px #fa692a; */
   /* rgba(0, 0, 0, 0.301); */
   opacity: 0.8;
+  position: relative;
 }
 
 .card > img {
   grid-column: 1;
   border-radius: 50%;
+  display: none;
 }
 
-#name {
-  font-family: "Quicksand", sans-serif !important;
-  font-size: 25px !important;
-  font-weight: bold;
 
-}
 
 .contactInfo {
   grid-column: 2;
   grid-row: 2 / span 6;
+  /* display: grid; 
+  grid-template-rows: 20% auto auto auto auto; */
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 100%;
 }
+
+#name {
+  position: absolute;
+  grid-column: 1;
+  top: -20px;
+  width: 100%;
+  font-family: "Quicksand", sans-serif !important;
+  font-size: 50px !important;
+  font-weight: bold;
+
+}
+
+#rate{
+  position: absolute;
+  grid-column: 3;
+  top: 55px;
+  left: 40px;
+  font-family: "Open Sans Light", sans-serif;
+  font-size: 35px;
+  font-style: italic;
+  letter-spacing: 0.1em;
+}
+
+#location{
+  /* font-family: "Quicksand", sans-serif !important; */
+  position: absolute;
+  top: 110px;
+  left: 40px;
+  font-family: "Open Sans Light", sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  letter-spacing: 0.1em;
+  /* font-size: 25px !important; */
+  /* font-weight: bold; */
+}
+
+#locationIcon{
+  top: 110px;
+  left: 40px;
+}
+
+#phone{
+  position: absolute;
+  top: 150px;
+  left: 40px;
+  font-family: "Open Sans Light", sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  letter-spacing: 0.1em;
+}
+
+#email{
+  position: absolute;
+  top: 190px;
+  left: 40px;
+  font-family: "Open Sans Light", sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  letter-spacing: 0.1em;
+}
+
+#website{
+  position: absolute;
+  top: 230px;
+  left: 40px;
+  font-family: "Open Sans Light", sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  letter-spacing: 0.1em;
+}
+
+
 
 .description {
   grid-column: 3 / span 3;
   grid-row: 1 / span 3;
   margin: 0px 0px 0px 20px;
+  display: none;
 }
 
 .tags {
@@ -51,10 +130,12 @@
   grid-template-rows: auto auto auto;
   gap: 30px 30px;
   padding: 20px;
+  display: none;
 }
 
 .tags > div {
   background-color: rgba(128, 128, 128, 0.589);
   border-radius: 30px;
   text-align: center;
+  display: none;
 }

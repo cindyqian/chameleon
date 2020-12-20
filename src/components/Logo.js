@@ -7,7 +7,7 @@ function Logo() {
     <div className="logo">
       <a className="container" href="/">
         <img src={Camera} alt="camera"/>
-        <div className="a > div">Chameleon</div>
+        <div>Chameleon</div>
       </a>
     </div>
   );

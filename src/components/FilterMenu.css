@@ -5,13 +5,13 @@
   opacity: 0.7;
   border-radius: 30px;
   min-width: 340px;
-  padding: 20px;
+  padding: 20px 20px 20px 30px;
   color: #fa692a;
   font-size: 20px;
   /* box-shadow: 2px 2px 4px #fa692a; */
   font-family: "Open Sans", sans-serif;
   font-style: italic;
-  padding-left: 30px; 
+  letter-spacing: 0.1em;
 }
 
 .dropdown-menu {
@@ -30,7 +30,7 @@
   min-width: 340px;
   font-size: 20px;
   color: #fa692a;
-  padding-left: 30px; 
+  border-radius: 30px;
 }
 
 .dropdown-menu a:hover {
@@ -41,4 +41,5 @@
 .dropdown:hover .dropdown-menu {
   display: block;
   opacity: 1;
+  border-radius: 30px;
 }

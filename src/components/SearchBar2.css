@@ -16,6 +16,7 @@
   border: none;
   /* box-shadow: 2px 2px 4px #fa692a; */
   padding-left: 30px; 
+  letter-spacing: 0.1em;
 }
 
 ::placeholder {

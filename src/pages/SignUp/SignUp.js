@@ -7,12 +7,12 @@ import { Link } from "react-router-dom";
 import InputButton from "../../components/InputButton.js";
 import Button from "../../components/Button.js";
 import Submit from '../../components/Submit.js';
-
+import { useHistory } from "react-router-dom";
 import { generateUserDocument } from "../../firebase.js";
 
 export default function SignUp() {
   document.body.style.backgroundColor = "#FFAF6D";
-
+  const history = useHistory();
   const emailRef = useRef();
   const passwordRef = useRef();
   const confirmPasswordRef = useRef();
@@ -33,7 +33,8 @@ export default function SignUp() {
       setLoading(true);
       console.log("signed up")
       const {user} = await signup(emailRef.current.value, passwordRef.current.value);
-      generateUserDocument(user, {phone: "phone", rate: "rate", website: "website"});
+      generateUserDocument(user, {phone: "425-123-4567", rate: "$50/hr", website: "www.instagram.com/earth"});
+      history.push("/profile");
     } catch {
       setError("Failed to create an account");
     }
@@ -45,40 +46,23 @@ export default function SignUp() {
       <div className="UserHeader SignUpHeader">Sign Up</div>
       <Container className="d-flex justify-content-center">
         <div className="w-100" style={{ maxWidth: "400px" }}>
-          {/* <Card style={{ maxWidth: "400px" , color: "#fa692a", borderRadius: "30px"}}> */}
-
-          {/* <Card.Body> */}
           {/* <h2 className="text-center mb-4">Sign Up</h2> */}
           {/* {error && <Alert variant="danger">{error}</Alert>} */}
           
-          <Form onSubmit={handleSubmit}>
+          <Form >
             <Form.Group id="email">
-              {/* <Form.Label> */}
-                {/* Email */}
                 <InputButton placeholder="Email" type="email" ref={emailRef} required left="37" top="37" />
-              {/* </Form.Label> */}
-              {/* <Form.Control type="email" ref={emailRef} required /> */}
             </Form.Group>
             <Form.Group id="password">
               <InputButton placeholder="Password" type="password" ref={passwordRef} required left="37" top= "50" />
-              {/* <Form.Label>Password</Form.Label> */}
-              {/* <Form.Control type="password" ref={passwordRef} required /> */}
             </Form.Group>
             <Form.Group id="confirmPassword">
               <InputButton placeholder="Confirm Password" type="password" ref={confirmPasswordRef} required left="37" top="63" />
-              {/* <Form.Label>Confirm Password</Form.Label>
-              <Form.Control type="password" ref={confirmPasswordRef} required /> */}
             </Form.Group>
-            {/* <Button buttonType="SubmitButton" path="/search" required left="45" top="67"/* text="submit"/> */}
-            <Submit path="/search" left="47" top="76"/>
-              {/* <Link to="/search">Submit</Link> */}
-              {/* erisfudkhj */}
-            {/* </submitButton> */}
+            <Submit onSubmit={handleSubmit} path="/search" left="47" top="76"/>
           </Form>
-          {/* </Card.Body> */}
-          {/* </Card> */}
           <div className="footer2">
-            Already have an account? <Link to="/login"> &nbsp; Sign In.</Link>
+            Already have an account? <Link to="/login" id="toLogin"> &nbsp; Sign In.</Link>
           </div>
         </div>
       </Container>

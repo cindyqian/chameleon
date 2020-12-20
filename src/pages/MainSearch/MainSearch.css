@@ -3,7 +3,7 @@
   grid-template-columns: 800px auto; 
   margin-top: 25px;
   margin-left: 150px;
-  grid-column-gap: 20px;
+  grid-column-gap: 50px;
 }
 
 .first {
@@ -17,7 +17,7 @@
 .searchResults {
   position: absolute;
   top: 35%;
-  margin: 25px 480px 40px 270px;
+  margin: 10px 480px 40px 240px;
 }
 
 .each{
