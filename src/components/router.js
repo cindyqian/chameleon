@@ -4,7 +4,7 @@ import { Route, Switch, useLocation, Link } from "react-router-dom";
 import ChooseUser from "../pages/ChooseUser/ChooseUser.js";
 import Login from "../pages/Login/Login.js";
 import SignUp from "../pages/SignUp/SignUp.js";
-import EditProfile from "../pages/editProfile/EditProfile.js";
+import EditProfile from "../pages/editProfile/editProfile.js";
 import MainSearch from "../pages/MainSearch/MainSearch.js";
 
 const routes = [
