@@ -13,6 +13,7 @@ export default class Navigation extends React.Component {
           <Nav className="mr-auto">
             <Nav.Link className= "mr-sm-2" style={{color: "white", fontSize: "1.5rem", fontWeight: "bold"}} href="/search">Home</Nav.Link>
             <Nav.Link style={{color: "white", fontSize: "1.5rem", fontWeight: "bold"}} href="/login">Login</Nav.Link>
+            <Nav.Link style={{color: "white", fontSize: "1.5rem", fontWeight: "bold"}} href="/profile">Edit Profile</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

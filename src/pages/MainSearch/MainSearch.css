@@ -1,8 +1,8 @@
 .header {
   display: grid;
   grid-template-columns: auto auto; 
-  margin-top: 145px;
-  margin-left: 250px;
+  margin-top: 25px;
+  margin-left: 150px;
 }
 
 .first {
@@ -14,7 +14,7 @@
 }
 
 .searchResults {
-  margin: 40px 480px 40px 250px;
+  margin: 40px 480px 40px 150px;
 }
 
 .each{
