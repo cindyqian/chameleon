@@ -1,47 +1,166 @@
-.card {
-    width: 800px;
-    display: grid;
-    grid-template-columns: 15% 20% auto;
-    grid-template-rows: 20% 20% auto auto auto auto; 
-    border: 1px solid black;
-    background-color: white;
-    border-radius: 30px;
-    margin: 40px 480px 40px 180px;
-    padding: 20px;
-    column-gap: 10px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+.quickView {
+  width: 800px;
+  height: 350px;
+  /* display: grid; */
+  /* grid-template-columns: 15% 20% auto auto auto; */
+  /* grid-template-columns: 60% 40%; */
+  /* grid-template-rows: 10% 20% auto auto auto auto; */
+
+  background-color: white;
+  border-radius: 40px;
+  padding: 10px;
+  column-gap: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  color: #001F4E;
+  /* box-shadow: 2px 4px 4px 1px #fa692a; */
+  /* rgba(0, 0, 0, 0.301); */
+  opacity: 0.8;
+  position: relative;
 }
 
 .card > img {
-    grid-column: 1;
-    border-radius: 50%;
+  grid-column: 1;
+  border-radius: 50%;
+  display: none;
+}
+
+#pfp{
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  width: 100%;
 }
 
 .contactInfo {
-    grid-column: 2;
-    grid-row: 1 / span 6;
+  /* grid-column: 2;
+  grid-row: 2 / span 6; */
+  /* display: grid; 
+  grid-template-rows: 20% auto auto auto auto; */
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 100%;
+}
+
+#name {
+  position: absolute;
+  grid-column: 1;
+  top: -20px;
+  width: 100%;
+  font-family: "Quicksand", sans-serif !important;
+  font-size: 50px !important;
+  font-weight: bold;
 
 }
 
+#rate{
+  position: absolute;
+  grid-column: 3;
+  top: 55px;
+  left: 60px;
+  font-family: "Open Sans Light", sans-serif;
+  font-size: 35px;
+  font-style: italic;
+  letter-spacing: 0.1em;
+}
+
+#location{
+  /* font-family: "Quicksand", sans-serif !important; */
+  position: absolute;
+  top: 110px;
+  left: 60px;
+  font-family: "Open Sans Light", sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  letter-spacing: 0.1em;
+  /* font-size: 25px !important; */
+  /* font-weight: bold; */
+}
+
+#locationIcon{
+  position: absolute;
+  top: 108px;
+  left: -3px;
+}
+
+#phone{
+  position: absolute;
+  top: 150px;
+  left: 60px;
+  font-family: "Open Sans Light", sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  letter-spacing: 0.1em;
+}
+
+#phoneIcon{
+  position: absolute;
+  top: 149px;
+  left: 1px;
+}
+
+
+#email{
+  position: absolute;
+  top: 190px;
+  left: 60px;
+  font-family: "Open Sans Light", sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  letter-spacing: 0.1em;
+}
+
+
+#emailIcon{
+  position: absolute;
+  top: 190px;
+  left: 1px;
+}
+
+#website{
+  position: absolute;
+  top: 230px;
+  left: 60px;
+  font-family: "Open Sans Light", sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  letter-spacing: 0.1em;
+}
+
+#websiteIcon{
+  position: absolute;
+  top: 229px;
+  left: 2px;
+}
+
+
 .description {
-    margin: 0px 0px 0px 20px;
-    grid-column: 3 / span 3;
-    grid-row: 1 / span 3;
+  grid-column: 3 / span 3;
+  grid-row: 1 / span 3;
+  margin: 0px 0px 0px 20px;
+  display: none;
 }
 
 .tags {
-    grid-column: 3 / span 3;
-    grid-row: 3 / span 3;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
-    gap: 30px 30px;
-    padding: 20px;
+  grid-column: 3 / span 3;
+  grid-row: 3 / span 3;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 30px 30px;
+  padding: 20px;
+  display: none;
 }
 
 .tags > div {
-    background-color: rgba(128, 128, 128, 0.589);
-    border-radius: 30px;
-    text-align: center;
+  background-color: rgba(128, 128, 128, 0.589);
+  border-radius: 30px;
+  text-align: center;
+  display: none;
 }

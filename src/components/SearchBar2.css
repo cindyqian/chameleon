@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+
+.search-bar {
+  background-color: white;
+  width: 100%;
+  padding: 20px;
+  border-radius: 30px;
+  color: #fa692a;
+  opacity: 0.7;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  border: none;
+  /* box-shadow: 2px 2px 4px #fa692a; */
+  padding-left: 30px; 
+  letter-spacing: 0.1em;
+}
+
+::placeholder {
+  color: #fa692a;
+  font-style: italic;
+  /* padding-left: 30px;  */
+}

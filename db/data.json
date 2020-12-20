@@ -1,0 +1,24 @@
+{
+    "photographers": [
+        {
+            "name": "Tracy Zhao", 
+            "location": "CA",
+            "rate": "$30/hr",
+            "phone": "123-456-7890",
+            "email": "janedoe@gmail.com",
+            "website": "instagram.com",
+            "tags": ["sunsets", "nature", "oceans", "watermelons", "hi", "ice cream", "wildlife", "sand", "flowers"],
+            "description": "hello! i am looking for job opportunities please hire me"
+        },
+        {
+            "name": "Cindy",
+            "location": "CA",
+            "rate": "$30/hr",
+            "phone": "123-456-7890", 
+            "email": "janedoe@gmail.com",
+            "website": "instagram.com",
+            "tags:": ["puppies"],
+            "description": "hello! i am looking for job opportunities please hire me"
+        }
+    ]
+}

@@ -1,3 +1,24 @@
-.MainSearch {
-    background-color: white;
+.header {
+  display: grid;
+  grid-template-columns: 800px auto; 
+  margin-top: 25px;
+  margin-left: 300px;
+  grid-column-gap: 50px;
+}
+
+.first {
+  grid-column: 1;
+}
+
+.second {
+  grid-column: 2;
+}
+
+.searchResults {
+  position: absolute;
+  margin: 20px 480px 40px 300px;
+}
+
+.each{
+  padding: 20px 0px 20px 0px;
 }

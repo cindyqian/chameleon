@@ -1,32 +1,97 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+.Button {
+  width: 26%;
+  height: 10%;
+  background-color: #ffffff;
+  opacity: 0.7;
+  border-radius: 80px;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  font-style: italic;
+  /* line-height: 1.3em;  */
+  letter-spacing: 0.1em;
+  color: #fa692a;
+  
+
+  position: absolute;
+  border: none;
+  /* padding: 35px 180px; */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  /* font-size: 16px; */
+}
 
 
-.Button{
-    width: 26%;
-    height: 10%;
-    background-color: #ffffff;
-    opacity: 0.7;
-    border-radius: 80px;
+.SubmitButton {
+  width: 10%;
+  height: 7%;
+  background-color: #ffffff;
+  background: url(checkmark.svg);
+  fill: #ffffff;
+  /* background-image:  */
+        /* url("data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM9.29 16.29L5.7 12.7c-.39-.39-.39-1.02 0-1.41.39-.39 1.02-.39 1.41 0L10 14.17l6.88-6.88c.39-.39 1.02-.39 1.41 0 .39.39.39 1.02 0 1.41l-7.59 7.59c-.38.39-1.02.39-1.41 0z"/></svg>"); */
+  opacity: 0.7;
+  border-radius: 80px;
 
-    font-family: 'Open Sans', sans-serif;
-    font-size: 25px;
-    font-weight: 400; 
-    font-style: italic;
-    /* line-height: 1.3em;  */
-    letter-spacing: 0.1em; 
-    color: #FA692A;
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  /* font-style: italic; */
+  /* line-height: 1.3em;  */
+  letter-spacing: 0.1em;
+  color: #FFAF6D;
+
+  position: absolute;
+  border: none;
+  /* padding: 35px 180px; */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  background: "/src/components/check_circle-24px.svg";
+  /* font-size: 16px; */
+}
 
 
-    position: absolute;
-    border: none;
-    /* padding: 35px 180px; */
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    /* font-size: 16px; */
+.SubmitButton:hover {
+  opacity: 0.9;
+}
+
+
+
+.InputButton {
+  width: 26%;
+  height: 10%;
+  background-color: #ffffff;
+  opacity: 0.7;
+  border-radius: 80px;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  font-style: italic;
+  /* line-height: 1.3em;  */
+  letter-spacing: 0.1em;
+  color: #FFAF6D;
+
+  position: absolute;
+  border: none;
+  /* padding: 35px 180px; */
+  display: inline-block;
+  /* font-size: 16px; */
 }
 
 .Button:hover {
-    opacity: 0.9;
+  opacity: 0.9;
 }
+
+
+::placeholder {
+  color: #FFAF6D;
   
+}

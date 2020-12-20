@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+
+.editProfileContainer {
+    display: grid;
+    grid-template-columns: 30% 35% 35%;
+    grid-template-rows: 9% 9% 9% 9% 35% auto;
+    gap: 60px 20px;
+    margin: 25px 150px 150px 150px;
+    color: white;
+    font-size: 25px;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* #profilePic {
+    grid-column: 1 / span 1;
+    border-radius: 50%;
+    background-color: white;
+} */
+
+#editName {
+    grid-column: 2 / span 2;
+    grid-row: 1;
+}
+
+#editEmail {
+    grid-column: 2 / span 2;
+    grid-row: 2;
+}
+
+#editPhoneNum {
+    grid-column: 2 / span 1;
+    grid-row: 3;
+}
+
+#editLocation {
+    grid-column: 3 / span 1;
+    grid-row: 3;
+}
+
+#editWebsite {
+    grid-column: 1 / span 3;
+    grid-row: 4;
+}
+
+#editIntro {
+    grid-column: 1 / span 3;
+    grid-row: 5;
+    padding:
+}
+
+.edit-tag-container {
+    grid-column: 1 / span 3;
+    grid-row: 6;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: white;
+    color: #fa692a;
+    opacity: 0.7;
+    border: none;
+    /* box-shadow: 2px 2px 4px #fa692a; */
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    letter-spacing: 0.1em;
+}
+
+.grid-col-1 {
+    grid-column: 1;
+}
+
+
+#save {
+    font-family: "Open Sans", sans-serif;
+    font-size: 30px;
+    background-color: white;
+    opacity: 1;
+    color: #fa692a;
+    border-radius: 30px;
+    
+    width: 20%;
+    margin: 30px auto 100px 800px;
+}
