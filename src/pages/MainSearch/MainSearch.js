@@ -7,7 +7,7 @@ import test from "./logo.svg";
 
 const photographers = [
   {
-    profilePic: test,
+    profilePic: "/src/components/pfps/jason.jpg",
     name: "Tracy Zhao",
     location: "Los Angeles, California",
     rate: "$300/hr",

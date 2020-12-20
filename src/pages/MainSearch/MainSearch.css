@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 800px auto; 
   margin-top: 25px;
-  margin-left: 150px;
+  margin-left: 300px;
   grid-column-gap: 50px;
 }
 
@@ -16,8 +16,7 @@
 
 .searchResults {
   position: absolute;
-  top: 35%;
-  margin: 10px 480px 40px 240px;
+  margin: 20px 480px 40px 300px;
 }
 
 .each{

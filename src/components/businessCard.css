@@ -30,11 +30,16 @@
   display: none;
 }
 
-
+#pfp{
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  width: 100%;
+}
 
 .contactInfo {
-  grid-column: 2;
-  grid-row: 2 / span 6;
+  /* grid-column: 2;
+  grid-row: 2 / span 6; */
   /* display: grid; 
   grid-template-rows: 20% auto auto auto auto; */
   position: absolute;
@@ -58,7 +63,7 @@
   position: absolute;
   grid-column: 3;
   top: 55px;
-  left: 40px;
+  left: 60px;
   font-family: "Open Sans Light", sans-serif;
   font-size: 35px;
   font-style: italic;
@@ -69,7 +74,7 @@
   /* font-family: "Quicksand", sans-serif !important; */
   position: absolute;
   top: 110px;
-  left: 40px;
+  left: 60px;
   font-family: "Open Sans Light", sans-serif;
   font-size: 20px;
   font-style: italic;
@@ -79,40 +84,60 @@
 }
 
 #locationIcon{
-  top: 110px;
-  left: 40px;
+  position: absolute;
+  top: 108px;
+  left: -3px;
 }
 
 #phone{
   position: absolute;
   top: 150px;
-  left: 40px;
+  left: 60px;
   font-family: "Open Sans Light", sans-serif;
   font-size: 20px;
   font-style: italic;
   letter-spacing: 0.1em;
 }
 
+#phoneIcon{
+  position: absolute;
+  top: 149px;
+  left: 1px;
+}
+
+
 #email{
   position: absolute;
   top: 190px;
-  left: 40px;
+  left: 60px;
   font-family: "Open Sans Light", sans-serif;
   font-size: 20px;
   font-style: italic;
   letter-spacing: 0.1em;
+}
+
+
+#emailIcon{
+  position: absolute;
+  top: 190px;
+  left: 1px;
 }
 
 #website{
   position: absolute;
   top: 230px;
-  left: 40px;
+  left: 60px;
   font-family: "Open Sans Light", sans-serif;
   font-size: 20px;
   font-style: italic;
   letter-spacing: 0.1em;
 }
 
+#websiteIcon{
+  position: absolute;
+  top: 229px;
+  left: 2px;
+}
 
 
 .description {

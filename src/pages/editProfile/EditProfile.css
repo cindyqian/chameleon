@@ -1,15 +1,14 @@
-.page {
-    display: flex;
-    justify-content: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
 
 .editProfileContainer {
-    flex: 1;
     display: grid;
     grid-template-columns: 30% 35% 35%;
     grid-template-rows: 9% 9% 9% 9% 35% auto;
-    gap: 50px 20px;
+    gap: 60px 20px;
     margin: 25px 150px 150px 150px;
+    color: white;
+    font-size: 25px;
+    font-family: "Open Sans", sans-serif;
 }
 
 /* #profilePic {
@@ -23,32 +22,38 @@
     grid-row: 1;
 }
 
-#email {
+#editEmail {
     grid-column: 2 / span 2;
     grid-row: 2;
 }
 
-#phoneNum {
+#editPhoneNum {
     grid-column: 2 / span 1;
     grid-row: 3;
 }
 
-#location {
+#editLocation {
     grid-column: 3 / span 1;
     grid-row: 3;
 }
 
-#website {
+#editWebsite {
     grid-column: 1 / span 3;
     grid-row: 4;
 }
 
-#introduction {
+#editIntro {
     grid-column: 1 / span 3;
     grid-row: 5;
 }
 
-.tag-container {
+.edit-tag-container {
     grid-column: 1 / span 3;
     grid-row: 6;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.grid-col-1 {
+    grid-column: 1;
 }
