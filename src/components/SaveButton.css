@@ -7,3 +7,10 @@
     color: #fa692a;
     border-radius: 30px;
 }
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}

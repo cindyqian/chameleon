@@ -32,9 +32,16 @@
 
 #pfp{
   position: absolute;
-  top: 20px;
-  left: 50px;
-  width: 100%;
+  top: 42px;
+  left: 450px;
+  width: 270px;
+  height: 270px;
+}
+
+#pin{
+  position: absolute;
+  top: 15px;
+  left: 660px;
 }
 
 .contactInfo {
@@ -49,6 +56,7 @@
 }
 
 #name {
+  
   position: absolute;
   grid-column: 1;
   top: -20px;
@@ -56,6 +64,7 @@
   font-family: "Quicksand", sans-serif !important;
   font-size: 50px !important;
   font-weight: bold;
+  
 
 }
 

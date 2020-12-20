@@ -33,6 +33,7 @@ export default function SignUp() {
       const {user} = await signup(emailRef.current.value, passwordRef.current.value);
       generateUserDocument(user, {phone: "425-123-4567", rate: "$50/hr", website: "www.instagram.com/earth"});
       history.push("/profile");
+      // window.location.href = "/src/pages/MainSearch/MainSearch.js";
     } catch {
       setError("Failed to create an account");
     }

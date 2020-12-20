@@ -95,3 +95,10 @@
   color: #FFAF6D;
   
 }
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}

@@ -1,7 +1,6 @@
 import React from "react";
 import "./Submit.css";
 import { Link } from "react-router-dom";
-// CHANGE TO NEW SHORTENED URL THAT ACTUALLY WORKS IEUHRSKJFIUEKRJSHFIUKHEJRD FIDUKJHERSD
 
 function Submit(props) {
   document.body.style.backgroundColor = "#FFAF6D";
