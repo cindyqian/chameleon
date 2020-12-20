@@ -80,7 +80,7 @@
     opacity: 1;
     color: #fa692a;
     border-radius: 30px;
-    
+    border: none;
     width: 20%;
     margin: 30px auto 100px 800px;
 }

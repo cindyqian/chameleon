@@ -19,7 +19,7 @@ function EditProfile() {
         <div id= 'editLocation'> Location: <br/> <EnterInfo placeholder="Location" /> </div>
         <div id= 'editWebsite'> Website: <br/> <EnterInfo placeholder="Website" /> </div>
         <div id= 'editIntro'> Introduce yourself and any COVID-19 precautions you may be taking: <br/> <EnterInfo placeholder="Introduction" /> Tags: </div>
-        <div className = 'edit-tag-container'> <br/> 
+        <div className = 'edit-tag-container'>
           <div className = 'grid-col-1'>
             <div> <input type = "checkbox"/> professional </div>
             <div> <input type = "checkbox"/> portrait </div>
