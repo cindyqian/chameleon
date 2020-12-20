@@ -2,7 +2,6 @@ import React, {useState, useEffect} from "react";
 import "../main.css";
 import EnterInfo from "../../components/enterInfo.js";
 import './EditProfile.css';
-
 import { useAuth } from "../../contexts/AuthContexts.js";
 
 function EditProfile() {
@@ -19,8 +18,8 @@ function EditProfile() {
         <div id= 'editPhoneNum'> Phone Number: <br/> <EnterInfo placeholder="Phone Number"/> </div>
         <div id= 'editLocation'> Location: <br/> <EnterInfo placeholder="Location" /> </div>
         <div id= 'editWebsite'> Website: <br/> <EnterInfo placeholder="Website" /> </div>
-        <div id= 'editIntro'> Introduce yourself and any COVID-19 precautions you may be taking: <br/> <EnterInfo placeholder="Introduction" /> </div>
-        <div className = 'edit-tag-container'> Tags: <br/> 
+        <div id= 'editIntro'> Introduce yourself and any COVID-19 precautions you may be taking: <br/> <EnterInfo placeholder="Introduction" /> Tags: </div>
+        <div className = 'edit-tag-container'> <br/> 
           <div className = 'grid-col-1'>
             <div> <input type = "checkbox"/> professional </div>
             <div> <input type = "checkbox"/> portrait </div>
@@ -43,6 +42,7 @@ function EditProfile() {
           </div>
         </div>
       </div>
+      <button id="save">Save</button>
     </div>
     
   );
